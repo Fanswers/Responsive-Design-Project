@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.articles__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles__line {
+  width: 100%;
+}
+
+.articles__line > div {
+  width: 98%;
+  height: 10%;
+  border-top: solid 1px #e5dbd1;
+  border-bottom: solid 1px #e5dbd1;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0 auto;
+  height: 40px;
+  width: 170px;
+  border: 1px solid #e5dbd1;
+  box-shadow: 3px 2px #e5dbd1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #003b5c;
+  font-family: 'HK Grotesk', sans-serif;
+}
