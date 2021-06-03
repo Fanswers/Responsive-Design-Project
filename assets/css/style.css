@@ -1,9 +1,10 @@
 body {
-  margin: 0px;
-  font-family: 'Libre Baskerville', serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'HK Grotesk', sans-serif;
 }
 
-.articles__title {
+.articles__section__title {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -24,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-h2 {
+.bibou {
   margin: 0 auto;
   height: 40px;
   width: 170px;
@@ -35,5 +36,56 @@ h2 {
   align-items: center;
   text-transform: uppercase;
   color: #003b5c;
-  font-family: 'HK Grotesk', sans-serif;
+}
+
+.articles__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articles__grid .articles__item {
+  height: 400px;
+  position: relative;
+}
+
+.articles__image {
+  margin: 0 auto;
+  height: 75%;
+  width: 92%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles__categorie {
+  margin-left: 4%;
+  display: flex;
+}
+
+.articles__categorie__title > h3 {
+  text-transform: uppercase;
+  color: #003b5c;
+}
+
+.articles__categorie .line {
+  width: 12px;
+  height: 1px;
+  background: #5D534F;
+  transform: translateY(-50%);
+  margin-top: 31px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.articles__categorie__categorie > h3 {
+  color: #5D534F;
+}
+
+.articles__title {
+  margin-left: 4%;
+  width: 75%;
+}
+
+.articles__title > h2 {
+  color: #003b5c;
+  font-family: 'Libre Baskerville', serif;
 }
