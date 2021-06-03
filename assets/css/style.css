@@ -4,17 +4,17 @@ body {
   font-family: 'HK Grotesk', sans-serif;
 }
 
-.articles__section__title {
+.categorie__style {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.articles__line {
+.categorie__line {
   width: 100%;
 }
 
-.articles__line > div {
+.categorie__line > div {
   width: 98%;
   height: 10%;
   border-top: solid 1px #e5dbd1;
@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-.bibou {
+.categorie__title {
   margin: 0 auto;
   height: 40px;
   width: 170px;
@@ -38,12 +38,12 @@ body {
   color: #003b5c;
 }
 
-.articles__grid {
+.categorie__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.articles__grid .articles__item {
+.categorie__grid .categorie__item {
   height: 400px;
   position: relative;
 }
@@ -66,7 +66,7 @@ body {
   color: #003b5c;
 }
 
-.articles__categorie .line {
+.articles__categorie .articles__line {
   width: 12px;
   height: 1px;
   background: #5D534F;
