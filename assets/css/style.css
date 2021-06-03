@@ -4,6 +4,11 @@ body {
   font-family: 'HK Grotesk', sans-serif;
 }
 
+.categorie__section {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
 .categorie__style {
   width: 100%;
   display: flex;
@@ -38,6 +43,32 @@ body {
   color: #003b5c;
 }
 
+.sub__categorie {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub__categorie__all {
+  display: flex;
+}
+
+.sub__categorie__all .sub__categorie__line {
+  width: 12px;
+  height: 1px;
+  background: #5D534F;
+  margin-top: 31px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.arrow__title {
+  text-transform: uppercase;
+  color: red;
+  width: 150px;
+}
+
+
 .categorie__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -61,7 +92,7 @@ body {
   display: flex;
 }
 
-.articles__categorie__title > h3 {
+.articles__categorie__title > h4 {
   text-transform: uppercase;
   color: #003b5c;
 }
@@ -76,11 +107,16 @@ body {
   margin-right: 5px;
 }
 
-.articles__categorie__categorie > h3 {
+.articles__categorie__categorie > h4 {
   color: #5D534F;
 }
 
 .articles__title {
+  margin-left: 4%;
+  width: 75%;
+}
+
+.categorie__item .arrow__title {
   margin-left: 4%;
   width: 75%;
 }
