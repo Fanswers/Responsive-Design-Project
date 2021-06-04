@@ -258,9 +258,20 @@ main {
   font-family: 'Libre Baskerville', serif;
 }
 
+.arrow__title > img {
+  height: 5px;
+  width: 19px;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
 .categorie__item .arrow__title {
   margin-left: 4%;
   width: 75%;
+}
+
+.categorie__item .arrow__title > img {
+  margin-top: 5%;
 }
 
 .newsletter__section {
@@ -437,6 +448,10 @@ main {
 
   .categorie__grid {
     grid-template-columns: none;
+  }
+
+  .categorie__item {
+    margin-bottom: 50px;
   }
 
   .sub__categorie {
