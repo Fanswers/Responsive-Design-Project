@@ -161,7 +161,7 @@ main {
 }
 
 .articles__image {
-  margin: 0 auto;percase;
+  margin: 0 auto;
   color: #003b5c;
   height: 75%;
   width: 92%;
@@ -210,4 +210,62 @@ main {
 .newsletter__section {
   height: 456px;
   width: 100%;
+}
+
+.newsletter__title {
+  font-family:  'Libre Baskerville', serif;
+  color: white;
+  font-size: 52px;
+  display: flex;
+}
+
+.newsletter__title > div {
+  margin: auto;
+  display: flex;
+}
+
+.newsletter__title p:last-of-type {
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.newsletter__desc {
+  font-family:  'Libre Baskerville', serif;
+  color: white;
+  font-size: 31px;
+  display: flex;
+}
+
+.newsletter__desc > p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.newsletter__button {
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 40px;
+  width: 170px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: white;
+  border: 1px solid #003b5c;
+  box-shadow: 7px 6px #E74832;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #003b5c;
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.newsletter__button:hover {
+  background-color: #003b5c;
+  color: white;
+  border: 1px solid white;
+  transition: 300ms;
 }
