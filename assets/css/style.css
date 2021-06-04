@@ -36,6 +36,49 @@ main {
   display: flex;
 }
 
+.burger__menu {
+  width: 50px;
+  height: 25px;
+  position: relative;
+  justify-content: space-between;
+  display: none;
+}
+
+.burger__menu .line {
+  width: 100%;
+  height: 1px;
+  background: black;
+  position: absolute;
+  transition: 0.3s all;
+}
+
+.burger__menu .line:first-of-type {
+  top: 0%;
+}
+
+.burger__menu .line:last-of-type {
+  bottom: 0%;
+}
+
+.burger__menu .line:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__menu.active .line:first-of-type {
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.burger__menu.active .line:last-of-type {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.burger__menu.active .line:nth-of-type(2) {
+  opacity: 0;
+}
+
 .meteo {
   margin: 0 auto;
   margin-top: 2%;
@@ -313,10 +356,18 @@ main {
   align-items: center;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
   transition: 200ms;
 }
 
+.footer__newsletter__button:hover {
+  background-color: white;
+  border: 1px solid #E74832;
+  color: #E74832;
+  transition: 300ms;
+}
 
 .footer__network__logo {
   display: flex;
@@ -344,6 +395,64 @@ main {
   width: 95%;
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media(max-width:1024px) {
+  .categorie__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .categorie__grid .categorie__item:last-of-type {
+    margin: 0 auto;
+    margin-top: 150px;
+    justify-content: space-around;
+  }
+}
+
+@media(max-width:900px) {
+  .burger__menu {
+    /* display: block; */
+  }
+
+  .header__first {
+    justify-content: space-around;
+  }
+
+  .header__meteo {
+    display: none;
+  }
+
+  .header__about {
+    display: none;
+  }
+}
+
+@media(max-width:640px) {
+  .header__second > div > h4 {
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .categorie__grid {
+    grid-template-columns: none;
+  }
+
+  .sub__categorie {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .sub__categorie .arrow__title:first-of-type{
+    display: none;
+  }
+
+  .footer__link {
+    display: block;
+  }
+
+  .footer__link > div {
+    justify-content: center;
+  }
 }
