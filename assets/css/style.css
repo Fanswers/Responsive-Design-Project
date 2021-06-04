@@ -91,6 +91,16 @@ main {
   margin-right: 50px;
 }
 
+.main__articles {
+  display: flex;
+}
+
+.main__articles__desc {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .categorie__section {
   margin-top: 50px;
