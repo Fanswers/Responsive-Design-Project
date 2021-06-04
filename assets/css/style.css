@@ -1,8 +1,89 @@
 body {
-  margin-left: 20px;
-  margin-right: 20px;
   font-family: 'HK Grotesk', sans-serif;
+  width: 100%;
 }
+
+main {
+  
+}
+
+.blue__title {
+  text-transform: uppercase;
+  color: #003b5c;
+}
+
+.gray__title {
+  color: #5D534F;
+}
+
+.header__first {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #e5dbd1;
+}
+
+.header__meteo {
+  width: 100%;
+  display: flex;
+}
+
+.meteo {
+  margin: 0 auto;
+  margin-top: 2%;
+  display: flex;
+}
+
+.meteo__image {
+  margin: 12px;
+}
+
+.meteo > div > h4 {
+  margin: 0;
+}
+
+.header__about {
+  width: 100%;
+  display: flex;
+}
+
+.about {
+  display: flex;
+  margin: 0 auto;
+}
+
+.about > h4 {
+  margin-right: 50px;
+}
+
+.header__about > h4 {
+  margin: 0;
+}
+
+.about__image {
+  margin-top: 23px;
+  height: 17px;
+}
+
+.header__logo {
+  height: 17px;
+}
+
+.header__second {
+  display: flex;
+}
+
+.header__second > div {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header__second > div > h4 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 
 .categorie__section {
   margin-top: 50px;
@@ -80,7 +161,8 @@ body {
 }
 
 .articles__image {
-  margin: 0 auto;
+  margin: 0 auto;percase;
+  color: #003b5c;
   height: 75%;
   width: 92%;
   background-repeat: no-repeat;
@@ -93,8 +175,7 @@ body {
 }
 
 .articles__categorie__title > h4 {
-  text-transform: uppercase;
-  color: #003b5c;
+  text-transform: up
 }
 
 .articles__categorie .articles__line {
@@ -113,7 +194,12 @@ body {
 
 .articles__title {
   margin-left: 4%;
-  width: 75%;
+  width: 90%;
+}
+
+.articles__title > h3 {
+  color: #003b5c;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .categorie__item .arrow__title {
@@ -121,7 +207,7 @@ body {
   width: 75%;
 }
 
-.articles__title > h2 {
-  color: #003b5c;
-  font-family: 'Libre Baskerville', serif;
+.newsletter__section {
+  height: 456px;
+  width: 100%;
 }
